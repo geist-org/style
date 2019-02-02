@@ -1,11 +1,13 @@
 .zi-avatar
   display inline-block
+  position relative
   overflow hidden
   width rem(30)
   height rem(30)
   border-radius 50%
   border 1px solid #eee
   vertical-align top
+  background-color #f6f6f6
 
   &+&
     margin-left 0
@@ -17,10 +19,14 @@
   &.big
     width rem(60)
     height rem(60)
+    .zi-avatar-string
+      font-size rem(20)
 
   &.huge
     width rem(90)
     height rem(90)
+    .zi-avatar-string
+      font-size rem(20)
 
   &.stacked
     &+&
@@ -30,7 +36,14 @@
     border-radius rem(5)
 
 
-
+.zi-avatar-string
+  position absolute
+  left 50%
+  top 50%
+  font-size rem(14)
+  text-align center
+  transform translate(-50%, -50%) scale(.6)
+  white-space nowrap
 
 
 

@@ -1,0 +1,59 @@
+br
+h3 Avatars
+p.zi-comment Default avatars
+.zi-card
+  img.small.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+  img.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+  img.big.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+  img.huge.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+
+  p
+    img.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+    img.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+    img.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+    img.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+
+br
+p.zi-comment Square avatars
+.zi-card
+  img.square.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+
+br
+p.zi-comment Stacked Avatars
+.zi-card
+  img.stacked.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+  img.stacked.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+  img.stacked.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+  img.stacked.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+
+br
+p.zi-comment Text Avatars
+.zi-card
+  span.zi-avatar
+    span.zi-avatar-string USER
+
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <img class="zi-avatar small" src="...">
+    <img class="zi-avatar" src="...">
+    <img class="zi-avatar big" src="...">
+    <img class="zi-avatar huge" src="...">
+
+    <img class="zi-avatar square" src="...">
+
+    <img class="zi-avatar stacked" src="...">
+    <img class="zi-avatar stacked" src="...">
+
+    <!--include img element-->
+    <span class="zi-avatar"><img src="..."></span>
+
+    <!--include text-->
+    <span class="zi-avatar">
+      <span class="zi-avatar-string">USER</span>
+    </span>
+    ```
+
