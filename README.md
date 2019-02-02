@@ -1,1 +1,1 @@
-## Zeit Themes
+## Zeit Style

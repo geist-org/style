@@ -1,5 +1,5 @@
 {
-  "name": "@zeit-ui/themes",
+  "name": "@zeit-ui/style",
   "version": "0.1.0",
   "description": "style for zeit",
   "main": "dist/style.css",
