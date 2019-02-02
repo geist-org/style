@@ -1,0 +1,28 @@
+br
+h3 Code
+
+.zi-card
+  p.zi-comment Inline code
+  p
+    code TypeScript
+
+  p.zi-comment Block code
+  pre const isNaN = val => Number.isNaN(val)
+
+  p.zi-comment Bash code
+  pre.zi-bash npm i @zeit-ui/style
+
+  p.zi-comment Dark style
+    pre.zi-dark Output: 1, Status: ok
+
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <code>TypeScript</code>
+    <pre>const isNaN = val => Number.isNaN(val)</pre>
+    <pre class="zi-bash">npm i @zeit-ui/style</pre>
+    <pre class="zi-dark">Output: 1, Status: ok</pre>
+    ```
