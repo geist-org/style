@@ -1,7 +1,8 @@
 .zi-btn
   -webkit-box-align center
   -webkit-align-items center
-  padding: 0 rem(25)
+  display inline-block
+  padding: 0 rem(22)
   border-radius 5px
   font-weight 100
   font-size rem(12)
@@ -12,7 +13,9 @@
   text-transform uppercase
   text-align center
   height rem(38)
-  width rem(148)
+  line-height rem(38)
+  width auto
+  min-width rem(200)
   white-space nowrap
   transition border 0.2s, background 0.2s, color 0.2s ease-out
   position relative
@@ -24,16 +27,24 @@
 
   &:not(.loading):hover
     color black
-    border-color black
     background white
+    &:not(.shadow):hover
+      border-color black
 
 .zi-btn
-
-  &.small
-    //width rem(78)
+  &.mini
     height rem(22)
+    line-height rem(22)
     padding: 0 rem(30)
     width initial
+    min-width rem(100)
+
+  &.small
+    height rem(30)
+    line-height rem(30)
+    padding: 0 rem(20)
+    width initial
+    min-width rem(150)
 
   &.primary
     background-color black
@@ -41,21 +52,34 @@
     color white
 
     &:not(.loading):hover
-      border 1px solid black
       background white
       color black
+      &:not(.shadow):hover
+        border 1px solid black
 
   &.warning
+    border-color #f5a623
+    background-color #f5a623
+    color white
+
+    &:not(.loading):hover
+      color #f5a623
+      background white
+      &:not(.shadow):hover
+        border-color #f5a623
+
+  &.danger
     border-color #eb5757
     background-color #eb5757
     color white
 
     &:not(.loading):hover
-      border-color #eb5757
       color #eb5757
       background white
+      &:not(.shadow):hover
+        border-color #eb5757
 
-  &.highlight
+  &.success
     border-color #007aff
     background-color #007aff
     color #fff
@@ -63,14 +87,15 @@
     &:not(.loading):hover
       color #007aff
       background: #fff
-      border-color #007aff
+      &:not(.shadow):hover
+        border-color #007aff
 
   &.abort
     background-color transparent
     border-color transparent
     color #666
 
-    &:not(.loading):hover
+    &:not(.loading):not(.shadow):hover
       background-color transparent
       border-color transparent
       color #666
@@ -108,7 +133,7 @@
   align-items center
   background-color #fafafa
 
-  span
+  i
     width 4px
     height 4px
     border-radius 50%
@@ -151,8 +176,7 @@
     font-size rem(14)
 
   &.circular
-    width initial
-    padding rem(5) rem(15)
+    //padding rem(5) rem(15)
     border-radius rem(100)
     box-shadow 0 4px 4px rgba(0, 0, 0, 0.06)
     text-transform uppercase
@@ -177,3 +201,5 @@
     i.suffix
       margin-left rem(10)
 
+.zi-btn.auto
+  min-width initial

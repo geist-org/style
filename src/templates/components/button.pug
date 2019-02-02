@@ -1,0 +1,163 @@
+br
+h3 Buttons
+p.zi-comment Basic button
+.zi-card
+  p.zi-comment Default
+  P
+    button.zi-btn Default
+  p.zi-comment Primary
+  p
+    button.zi-btn.primary Primary
+
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <button class="zi-btn">Default</button>
+    <button class="zi-btn primary">Primary</button>
+    ```
+
+
+br
+p.zi-comment Button Type
+.zi-card
+  p.zi-comment Default button
+  .zi-btn(style='margin-right: 15px') ACTION
+  .zi-btn.success(style='margin-right: 15px') SUCCESS
+  .zi-btn.warning(style='margin-right: 15px') WARNING
+  .zi-btn.danger(style='margin-right: 15px') DANGER
+
+  p.zi-comment Small button
+  .zi-btn.small(style='margin-right: 15px') ACTION
+
+  p.zi-comment Mini button
+  .zi-btn.mini(style='margin-right: 15px') ACTION
+
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <button class="zi-btn">ACTION</button>
+    <button class="zi-btn success">ACTION</button>
+    <button class="zi-btn warning">ACTION</button>
+    <button class="zi-btn danger">ACTION</button>
+
+    <button class="zi-btn small">ACTION</button>
+    <button class="zi-btn mini">ACTION</button>
+    ```
+
+br
+p.zi-comment Status
+.zi-card
+  p.zi-comment Disabled button
+  p
+    button.zi-btn.disbaled Disabled
+  p
+    button.zi-btn.small.disbaled Disabled
+
+  br
+  p.zi-comment Abort button
+  p
+    button.zi-btn.abort Abort
+  p
+    button.zi-btn.small.abort Abort
+
+  br
+  p.zi-comment Shadown button
+  p
+    button.zi-btn.shadow Shadow
+  p
+    button.zi-btn.small.shadow Shadow
+
+  br
+  p.zi-comment Loading button
+  p
+    button.zi-btn.loading
+      span.zi-loading-shim
+        i
+        i
+        i
+
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <button class="zi-btn disabled">Disabled</button>
+    <button class="zi-btn abort">Abort</button>
+    <button class="zi-btn shadow">Shadow</button>
+
+    <button class="zi-btn loading">
+      <span class="zi-loading-shim">
+        <i></i><i></i><i></i>
+      </span>
+    </button>
+    ```
+
+br
+p.zi-comment Icon
+.zi-card
+  p.zi-comment Prefix icon
+  p
+    button.zi-btn GITHUB
+      i.prefix.zi-icon-github
+  p
+    button.zi-btn.small GITHUB
+      i.prefix.zi-icon-github
+
+  br
+  p.zi-comment Suffix icon
+  p
+    button.zi-btn GITHUB
+      i.suffix.zi-icon-github
+  p
+    button.zi-btn.small GITHUB
+      i.suffix.zi-icon-github
+
+  br
+  p.zi-comment Circular
+  p
+    button.zi-btn.small.circular show more
+      i.suffix.zi-icon-up
+
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <button class="zi-btn">
+      Prefix
+      <i class="prefix zi-icon-github"></i>
+    </button>
+
+    <button class="zi-btn">
+      Suffix
+      <i class="suffix zi-icon-github"></i>
+    </button>
+
+    <button class="zi-btn small circular">
+      show more
+      <i class="suffix zi-icon-up"></i>
+    </button>
+    ```
+
+br
+p.zi-comment Auto width
+.zi-card
+    p
+      button.zi-btn.auto auto width
+
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <button class="zi-btn auto">auto width</button>
+    ```
