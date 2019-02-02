@@ -1,0 +1,62 @@
+html
+  font-size 14px
+
+body
+  sans()
+  light()
+  -webkit-font-smoothing antialiased
+  text-rendering optimizeLegibility
+  font-size 1rem
+  line-height 1.7
+  margin 0
+  padding 0
+
+*,
+*::before,
+*::after
+  box-sizing inherit
+  text-rendering geometricPrecision
+  -webkit-tap-highlight-color transparent
+
+h1, h2, h3, h4, h5, h6
+  line-height 1.3em
+  color inherit
+
+span
+  line-height 1.14em
+  color inherit
+
+p
+  color inherit
+
+a
+  color #067df7
+  outline none
+  cursor pointer
+  text-decoration none
+  font-size inherit
+  -webkit-touch-callout none
+
+svg:not(:root)
+  overflow hidden
+
+button, input, select, textarea
+  font-family inherit
+  font-size inherit
+  line-height inherit
+  color inherit
+  margin 0
+
+  &:focus
+    outline none
+
+ol, ul
+  list-style none
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"]
+  appearance button
+
+input:-webkit-autofill
+  box-shadow 0 0 0 100px #fff inset

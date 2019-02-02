@@ -1,0 +1,23 @@
+ul, ol
+  padding 0
+  margin-left rem(14)
+
+ol
+  list-style-type decimal
+
+li
+  font-size rem(14)
+  line-height rem(24)
+
+  &+&
+    margin-top rem(10)
+
+ul>li
+  &::before
+    content '-'
+    display inline-block
+    color #999
+    position absolute
+    margin-left rem(-15)
+
+

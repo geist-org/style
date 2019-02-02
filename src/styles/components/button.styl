@@ -1,0 +1,179 @@
+.zi-btn
+  -webkit-box-align center
+  -webkit-align-items center
+  padding: 0 rem(25)
+  border-radius 5px
+  font-weight 100
+  font-size rem(12)
+  cursor pointer
+  user-select none
+  outline none
+  justify-content center
+  text-transform uppercase
+  text-align center
+  height rem(38)
+  width rem(148)
+  white-space nowrap
+  transition border 0.2s, background 0.2s, color 0.2s ease-out
+  position relative
+  overflow hidden
+
+  background white
+  border 1px solid #eaeaea
+  color #666
+
+  &:not(.loading):hover
+    color black
+    border-color black
+    background white
+
+.zi-btn
+
+  &.small
+    //width rem(78)
+    height rem(22)
+    padding: 0 rem(30)
+    width initial
+
+  &.primary
+    background-color black
+    border: 1px solid black
+    color white
+
+    &:not(.loading):hover
+      border 1px solid black
+      background white
+      color black
+
+  &.warning
+    border-color #eb5757
+    background-color #eb5757
+    color white
+
+    &:not(.loading):hover
+      border-color #eb5757
+      color #eb5757
+      background white
+
+  &.highlight
+    border-color #007aff
+    background-color #007aff
+    color #fff
+
+    &:not(.loading):hover
+      color #007aff
+      background: #fff
+      border-color #007aff
+
+  &.abort
+    background-color transparent
+    border-color transparent
+    color #666
+
+    &:not(.loading):hover
+      background-color transparent
+      border-color transparent
+      color #666
+
+  &.shadow
+    box-shadow 0 5px 10px rgba(0, 0, 0, 0.12)
+
+    &:not(.loading):hover
+      box-shadow 0 7px 20px rgba(0, 0, 0, 0.16)
+      transform translateY(-1px)
+
+  &.disbaled
+    background #fafafa !important
+    border-color #eaeaea !important
+    color #ccc !important
+    cursor not-allowed !important
+
+  &.loading
+    cursor default
+
+    &:hover
+      pointer-events none
+      color transparent
+
+.zi-loading-shim
+  position absolute
+  top 0
+  left 0
+  right 0
+  bottom 0
+  width 100%
+  height 100%
+  display flex
+  justify-content center
+  align-items center
+  background-color #fafafa
+
+  span
+    width 4px
+    height 4px
+    border-radius 50%
+    background-color #444
+    margin 0 1px
+    display inline-block
+    animation zi-loading-blink 1.4s infinite both
+
+    &:nth-child(2)
+      animation-delay 0.2s
+
+    &:nth-child(3)
+      animation-delay 0.4s
+
+
+@keyframes zi-loading-blink
+  0%
+    opacity 0.2
+  20%
+    opacity 1
+  100%
+    opacity 0.2
+
+
+.zi-btn .prefix, .zi-btn .suffix
+  position absolute
+  top 50%
+  transform translateY(-50%)
+  font-size rem(25)
+
+
+.zi-btn
+  & .prefix
+    left rem(8)
+
+  & .suffix
+    right rem(8)
+
+  &.small .prefix, &.small .suffix
+    font-size rem(14)
+
+  &.circular
+    width initial
+    padding rem(5) rem(15)
+    border-radius rem(100)
+    box-shadow 0 4px 4px rgba(0, 0, 0, 0.06)
+    text-transform uppercase
+    background-color #fff
+    height rem(18)
+    line-height rem(18)
+    border none
+
+    &:hover
+      border none
+      color: black;
+      box-shadow: 0 5px 9px rgba(0, 0, 0, 0.08)
+
+    i.prefix, i.suffix
+      font-size rem(12)
+      position initial
+      line-height inherit
+
+    i.prefix
+      margin-right rem(10)
+
+    i.suffix
+      margin-left rem(10)
+

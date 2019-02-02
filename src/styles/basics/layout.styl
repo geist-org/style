@@ -1,0 +1,36 @@
+.zi-main
+  background-color #fafafa
+  min-height 100vh
+
+.zi-layout
+  margin 0 auto
+  padding rem(50) 0
+  box-sizing border-box
+
+  &:before
+    position fixed
+    content ''
+    left -500px
+    right -500px
+    top -500px
+    bottom -500px
+    background-color #fafafa
+    z-index -1
+
+.zi-layout
+  +layout(xs)
+    width 100%
+    padding rem(15) rem(15) rem(25)
+  +layout(sm)
+    width 100%
+    padding rem(15) rem(20) rem(30)
+  +layout(md)
+    width $SCREEN_SM - 100
+    padding rem(20) rem(25) rem(40)
+    min-width 80%
+  +layout(lg)
+    width $SCREEN_MD
+    padding rem(25) rem(35) rem(45)
+    max-width 85%
+
+
