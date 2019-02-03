@@ -1,0 +1,67 @@
+br
+h3 Inputs
+p.zi-comment Basic inputs
+.zi-card
+  p.zi-comment Normal
+  p
+    input.zi-input(placeholder='The Evil Rabbit')
+  br
+  p.zi-comment.disabled Disabled
+  p
+    input.zi-input.disabled(placeholder='The Evil Rabbit' disabled)
+  br
+  p.zi-comment Error
+  p
+    input.zi-input.error(value='The Evil Rabbit')
+  br
+  p.zi-comment Success
+  p
+    input.zi-input.success(value='The Evil Rabbit')
+
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <input class="zi-input" placeholder="The Evil Rabbit">
+    <input class="zi-input disabled" disabled placeholder="The Evil Rabbit">
+    <input class="zi-input error" value="The Evil Rabbit">
+    <input class="zi-input success" value="The Evil Rabbit">
+    ```
+
+br
+p.zi-comment Input Group
+.zi-card
+  p.zi-comment include icon
+  .zi-input-group
+    span.zi-label
+      i.zi-icon-mail
+    input.zi-input(placeholder='The Evil Rabbit')
+  br
+  p.zi-comment include text
+  .zi-input-group
+    span.zi-label zeit.co/teams
+    input.zi-input(value='Zeit')
+  p
+
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <div class="zi-input-group">
+      <span class="zi-label"><i class="zi-icon-mail"></i></span>
+      <input class="zi-input" placeholder="The Evil Rabbit">
+    </div>
+
+    <div class="zi-input-group">
+      <span class="zi-label">zeit.co/teams</span>
+      <input class="zi-input" value="Zeit">
+    </div>
+    ```
+
+
+
+
