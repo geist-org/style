@@ -8,7 +8,8 @@
     "commit": "commit",
     "release": "npm run build && npm publish --access=public",
     "start": "webpack-dev-server --config ./scripts/webpack.dev.js --progress",
-    "build": "rm -rf ./dist && webpack --config ./scripts/webpack.prod.js --progress"
+    "build": "rm -rf ./dist && webpack --config ./scripts/webpack.prod.js --progress",
+    "now-build": "NODE_ENV=production npm run build"
   },
   "files": [
     "LICENSE",

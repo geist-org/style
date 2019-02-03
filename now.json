@@ -1,14 +1,12 @@
 {
-  "name": "fine",
+  "name": "zeit-style",
   "version": 2,
-  "alias": "fine.sh",
+  "alias": "zeit-style",
   "builds": [
     { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "dist" } }
   ],
   "routes": [
-    {"src": "^/js/(.*)", "dest": "/js/$1"},
-    {"src": "^/css/(.*)", "dest": "/css/$1"},
-    {"src": "^/img/(.*)", "dest": "/img/$1"},
-    {"src": ".*", "dest": "/index.html"}
+    {"src": "^/resources/(.*)", "dest": "/resources/$1"},
+    {"src": ".html", "dest": "/index.html"}
   ]
 }
