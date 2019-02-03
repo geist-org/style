@@ -4,7 +4,10 @@ html(lang="en")
     meta(name='format-detection' content='telephone=no, email=no')
     meta(name='viewport' content='initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover')
     title zeit-style
-    link(rel='stylesheet' href='./resources/prism-ghcolors.css')
+    link(rel='stylesheet' href='./assets/prism-ghcolors.css')
+    link(rel='icon' href='./assets/favicon.ico')
+    link(rel='preconnect' href='//zeit-style.now.sh')
+    link(rel='dns-prefetch' href='//zeit-style.now.sh')
   body
     .zi-main.zi-layout.ex-layout
       include side
@@ -13,7 +16,7 @@ html(lang="en")
         include basics/index
         include components/index
 
-    script(src='./resources/prism.js' async)
+    script(src='./assets/prism.js' async)
     script(src='https://www.googletagmanager.com/gtag/js?id=UA-110371817-2' async)
     script.
       (function(){

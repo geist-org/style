@@ -6,7 +6,7 @@
     { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "dist" } }
   ],
   "routes": [
-    {"src": "^/resources/(.*)", "dest": "/resources/$1"},
+    {"src": "^/assets/(.*)", "dest": "/assets/$1"},
     {"src": ".html", "dest": "/index.html"}
   ]
 }

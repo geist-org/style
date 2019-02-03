@@ -51,8 +51,8 @@ module.exports = {
 
   plugins: [
     new CopyPlugin([{
-      from: helper.join('src/templates/resources'),
-      to: 'resources',
+      from: helper.join('src/templates/assets'),
+      to: 'assets',
     }])
   ],
 }
