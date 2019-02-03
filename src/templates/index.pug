@@ -6,9 +6,11 @@ html(lang="en")
     title zeit-style
     link(rel='stylesheet' href='./resources/prism-ghcolors.css')
   body
-    .zi-main.zi-layout
-      include summary
-      include basics/index
-      include components/index
+    .zi-main.zi-layout.ex-layout
+      include side
+      .ex-content
+        include summary
+        include basics/index
+        include components/index
 
     script(src='./resources/prism.js' async)

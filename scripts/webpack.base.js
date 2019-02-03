@@ -5,6 +5,7 @@ const helper = require('./helper')
 module.exports = {
   entry: {
     style: helper.join('src/styles/index.styl'),
+    template_style: helper.join('src/templates/styles/index.styl'),
   },
 
   devtool: 'source-map',
