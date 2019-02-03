@@ -14,3 +14,11 @@ html(lang="en")
         include components/index
 
     script(src='./resources/prism.js' async)
+    script(src='https://www.googletagmanager.com/gtag/js?id=UA-110371817-2' async)
+    script.
+      (function(){
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date())
+        gtag('config', 'UA-110371817-2')
+      })()
