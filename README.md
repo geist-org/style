@@ -1,6 +1,7 @@
 ## Zeit Style
-Zeit style is a modern css library, originating from [Zeit Design](https://zeit.co/design).
 [![CircleCI](https://circleci.com/gh/zeit-ui/zeit-style/tree/master.svg?style=svg)](https://circleci.com/gh/zeit-ui/zeit-style/tree/master)
+
+Zeit style is a modern css library, originating from [Zeit Design](https://zeit.co/design).
 
 <br/>
 
