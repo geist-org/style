@@ -5,6 +5,7 @@ p.zi-comment Basic button
   p.zi-comment Default
   P
     button.zi-btn Default
+  br
   p.zi-comment Primary
   p
     button.zi-btn.primary Primary
@@ -24,16 +25,21 @@ br
 p.zi-comment Button Type
 .zi-card
   p.zi-comment Default button
-  .zi-btn(style='margin-right: 15px') ACTION
-  .zi-btn.success(style='margin-right: 15px') SUCCESS
-  .zi-btn.warning(style='margin-right: 15px') WARNING
-  .zi-btn.danger(style='margin-right: 15px') DANGER
+  div
+    .zi-btn(style='margin-right: 15px') ACTION
+    .zi-btn.success(style='margin-right: 15px') SUCCESS
+    .zi-btn.warning(style='margin-right: 15px') WARNING
+    .zi-btn.danger(style='margin-right: 15px') DANGER
+  br
 
   p.zi-comment Small button
-  .zi-btn.small(style='margin-right: 15px') ACTION
+  div
+    .zi-btn.small(style='margin-right: 15px') ACTION
+  br
 
   p.zi-comment Mini button
-  .zi-btn.mini(style='margin-right: 15px') ACTION
+  div
+    .zi-btn.mini(style='margin-right: 15px') ACTION
 
 br
 .zi-example
@@ -56,21 +62,21 @@ p.zi-comment Status
   p.zi-comment Disabled button
   p
     button.zi-btn.disbaled Disabled
-  p
+  p(style='margin-top: 10px')
     button.zi-btn.small.disbaled Disabled
 
   br
   p.zi-comment Abort button
   p
     button.zi-btn.abort Abort
-  p
+  p(style='margin-top: 10px')
     button.zi-btn.small.abort Abort
 
   br
   p.zi-comment Shadown button
   p
     button.zi-btn.shadow Shadow
-  p
+  p(style='margin-top: 10px')
     button.zi-btn.small.shadow Shadow
 
   br
@@ -106,7 +112,7 @@ p.zi-comment Icon
   p
     button.zi-btn GITHUB
       i.prefix.zi-icon-github
-  p
+  p(style='margin-top: 10px')
     button.zi-btn.small GITHUB
       i.prefix.zi-icon-github
 
@@ -115,7 +121,7 @@ p.zi-comment Icon
   p
     button.zi-btn GITHUB
       i.suffix.zi-icon-github
-  p
+  p(style='margin-top: 10px')
     button.zi-btn.small GITHUB
       i.suffix.zi-icon-github
 

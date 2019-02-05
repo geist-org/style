@@ -1,10 +1,21 @@
+@import "../../styles/vars/index.styl"
+@import "../../styles/responsive.styl"
+
 .ex-side
   display flex
   min-width 200px
 
 .ex-side-content
   position fixed
-  width 170px
+  width 185px
+  overflow-y auto
+  overflow-x hidden
+  height calc(100% - 10vh)
+  -ms-overflow-style none
+
+  &::-webkit-scrollbar
+    width: 0 !important
+    display none !important
 
   a
     color black
@@ -19,3 +30,11 @@
     margin-left 0
 
 
+.ex-side, .ex-side-content
+  +layout(xs)
+    display none
+    min-width 0
+    width 0
+  +layout(sm)
+    min-width 100px
+    width 100px

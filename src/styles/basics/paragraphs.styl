@@ -18,19 +18,21 @@ span
 a
   font-size inherit
 
+  &:hover
+    text-decoration underline
+
 .zi-dark span
   color #aaa
 
-.zi-subtitle
+.zi-subtitle, .zi-subheading
   font-size rem($FONT_SIZE_SUB_TITLE)
   color $COLOR_SUB_TITLE
 
 .zi-comment
   font-size rem($FONT_SIZE_COMMENT)
   color $COLOR_COMMENT
-  margin-bottom rem(20)
 
-.zi-label
+.zi-title
   font-size rem($FONT_SIZE_LABEL)
   color $COLOR_LABEL
   text-transform uppercase
