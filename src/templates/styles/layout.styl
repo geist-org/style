@@ -1,3 +1,6 @@
+@import "../../styles/vars/index.styl"
+@import "../../styles/responsive.styl"
+
 .ex-layout
   display flex
   max-width 1100px
@@ -6,4 +9,12 @@
 .ex-content
   display flex
   flex-direction column
-  overflow hidden
+
+
+.ex-content
+  +layout(xs)
+    width 100%
+    flex 1
+  +layout(sm)
+    width 100%
+    flex 1
