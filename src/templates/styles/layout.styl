@@ -1,8 +1,11 @@
 @import "../../styles/vars/index.styl"
 @import "../../styles/responsive.styl"
 
-body
+body, html
   overflow-x hidden
+
+  +layout(xs)
+    font-size 12px
 
 .ex-layout
   display flex
@@ -21,3 +24,4 @@ body
   +layout(sm)
     width 100%
     flex 1
+
