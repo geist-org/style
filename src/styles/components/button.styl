@@ -58,37 +58,37 @@
         border 1px solid black
 
   &.warning
-    border-color #f5a623
-    background-color #f5a623
+    border-color $STATUS_WARNING
+    background-color $STATUS_WARNING
     color white
 
     &:not(.loading):hover
-      color #f5a623
+      color $STATUS_WARNING
       background white
       &:not(.shadow):hover
-        border-color #f5a623
+        border-color $STATUS_WARNING
 
-  &.danger
-    border-color #eb5757
-    background-color #eb5757
+  &.danger, &.error
+    border-color $STATUS_DANGER
+    background-color $STATUS_DANGER
     color white
 
     &:not(.loading):hover
-      color #eb5757
+      color $STATUS_DANGER
       background white
       &:not(.shadow):hover
-        border-color #eb5757
+        border-color $STATUS_DANGER
 
   &.success
-    border-color #007aff
-    background-color #007aff
+    border-color $STATUS_SUCCESS
+    background-color $STATUS_SUCCESS
     color #fff
 
     &:not(.loading):hover
-      color #007aff
+      color $STATUS_SUCCESS
       background: #fff
       &:not(.shadow):hover
-        border-color #007aff
+        border-color $STATUS_SUCCESS
 
   &.abort
     background-color transparent

@@ -10,20 +10,20 @@
     text-transform uppercase
     font-weight 500
 
-  &.hint
-    border-color #067df7
+  &.hint, &.success
+    border-color $STATUS_SUCCESS
     >.zi-note-type
-      color #067df7
+      color $STATUS_SUCCESS
 
   &.alert, &.warning
-    border-color #f48121
+    border-color $STATUS_WARNING
     >.zi-note-type
-      color #f48121
+      color $STATUS_WARNING
 
-  &.error
-    border-color #ff001f
+  &.error, &.danger
+    border-color $STATUS_ERROR
     >.zi-note-type
-      color #ff001f
+      color $STATUS_ERROR
 
 
 
