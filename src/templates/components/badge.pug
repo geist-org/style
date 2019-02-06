@@ -43,3 +43,36 @@ br
     <span class="zi-badge warning">50</span>
     <span class="zi-badge error">50</span>
     ```
+
+br
+p.zi-comment Combination
+.zi-card
+  p
+    span.zi-badge-group(style='margin-right: 30px')
+      img.zi-avatar.square(src='//zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+      sup.zi-badge.red 10+
+  br
+  p this is a&nbsp
+    span.zi-badge-group
+      a link
+      sup.zi-badge.red.dot
+    |.
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <span class="zi-badge-group">
+      <img class="zi-avatar square" src="...">
+      <sup class="zi-badge">10+</sup>
+    </span>
+
+    <p>
+      this is a
+      <span class="zi-badge-group">
+        <a href="...">link</a>
+        <sup class="zi-badge dot"></sup>
+      </span>
+    </p>
+    ```
