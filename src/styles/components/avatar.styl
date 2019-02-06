@@ -9,6 +9,12 @@
   vertical-align top
   background-color #f6f6f6
 
+  img
+    display inline-block
+    width 100%
+    height 100%
+    border-radius 50%
+
   &+&
     margin-left 0
 
@@ -35,6 +41,9 @@
   &.square
     border-radius rem(5)
 
+  &.single
+    .zi-avatar-string
+      transform translate(-50%, -50%) scale(1)
 
 .zi-avatar-string
   position absolute
@@ -44,6 +53,7 @@
   text-align center
   transform translate(-50%, -50%) scale(.6)
   white-space nowrap
+  user-select none
 
 
 

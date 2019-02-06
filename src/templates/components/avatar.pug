@@ -11,7 +11,8 @@ p.zi-comment Default avatars
     img.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
     img.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
     img.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
-    img.zi-avatar(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
+    span.zi-avatar
+      img(src='https://zeit.co/api/www/avatar/?u=evilrabbit&s=240')
 
 br
 p.zi-comment Square avatars
@@ -31,6 +32,9 @@ p.zi-comment Text Avatars
 .zi-card
   span.zi-avatar
     span.zi-avatar-string USER
+  span(style='margin-right: 5px')
+  span.zi-avatar.single
+    span.zi-avatar-string L
 
 br
 .zi-example
@@ -54,6 +58,9 @@ br
     <!--include text-->
     <span class="zi-avatar">
       <span class="zi-avatar-string">USER</span>
+    </span>
+    <span class="zi-avatar single">
+      <span class="zi-avatar-string">L</span>
     </span>
     ```
 
