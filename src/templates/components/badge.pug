@@ -1,5 +1,6 @@
 br
 h3#badges Badges
+p.zi-comment Basic badges
 .zi-card
   p.zi-comment Default badges
   p
@@ -12,7 +13,6 @@ h3#badges Badges
     span.zi-badge.red(style='margin-right: 10px') 5
     span.zi-badge.red(style='margin-right: 10px') 50
     span.zi-badge.red(style='margin-right: 10px') 100
-
 br
 .zi-example
   span html code:
@@ -23,3 +23,23 @@ br
     <span class="zi-badge red">5</span>
     ```
 
+br
+p.zi-comment Status
+.zi-card
+  p
+    span.zi-badge(style='margin-right: 10px') 5
+    span.zi-badge.success(style='margin-right: 10px') 50
+    span.zi-badge.warning(style='margin-right: 10px') 50
+    span.zi-badge.error(style='margin-right: 10px') 50
+
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <span class="zi-badge">5</span>
+    <span class="zi-badge success">50</span>
+    <span class="zi-badge warning">50</span>
+    <span class="zi-badge error">50</span>
+    ```
