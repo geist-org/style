@@ -1,6 +1,6 @@
 {
   "name": "@zeit-ui/style",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "style for zeit",
   "main": "dist/style.css",
   "module": "dist/style.css",

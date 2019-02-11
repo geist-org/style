@@ -46,6 +46,13 @@
     width initial
     min-width rem(150)
 
+  &.big, &.huge
+    height rem(42)
+    line-height rem(42)
+    padding: 0 rem(30)
+    width initial
+    min-width rem(250)
+
   &.primary
     background-color black
     border: 1px solid black
@@ -101,17 +108,23 @@
       color #666
 
   &.shadow
-    box-shadow 0 5px 10px rgba(0, 0, 0, 0.12)
+    box-shadow 0 3px 10px rgba(0, 0, 0, 0.12)
 
     &:not(.loading):hover
       box-shadow 0 7px 20px rgba(0, 0, 0, 0.16)
       transform translateY(-1px)
 
-  &.disbaled
+  &.disabled
     background #fafafa !important
     border-color #eaeaea !important
     color #ccc !important
     cursor not-allowed !important
+
+    &:hover
+      background #fafafa !important
+      border-color #eaeaea !important
+      color #ccc !important
+      cursor not-allowed !important
 
   &.loading
     cursor default
@@ -163,6 +176,7 @@
   top 50%
   transform translateY(-50%)
   font-size rem(25)
+  pointer-events none
 
 
 .zi-btn
