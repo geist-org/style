@@ -33,6 +33,21 @@
     color $STATUS_SUCCESS
     border-color $STATUS_SUCCESS
 
+  &.small
+    font-size rem(12)
+    height rem(32)
+    line-height rem(22)
+
+  &.mini
+    font-size rem(12)
+    height rem(28)
+    line-height rem(20)
+
+  &.big, &.huge
+    font-size rem(16)
+    height rem(42)
+    line-height rem(38)
+
 .zi-input-group
   display inline-flex
   border-radius 5px
@@ -64,8 +79,41 @@
     i
       margin 0 rem(4)
 
+  &.append
+    justify-content flex-end
 
+    input
+      border-top-right-radius 0
+      border-bottom-right-radius 0
+      border-top-left-radius 5px
+      border-bottom-left-radius 5px
 
+    >.zi-label
+      border-left none
+      border-right 1px solid #e1e1e1
+      border-top-right-radius 5px
+      border-bottom-right-radius 5px
+      border-top-left-radius 0
+      border-bottom-left-radius 0
+
+  &.clearable
+    position relative
+
+    input
+      border-radius 5px
+      padding-right rem(28)
+    i.close
+      color #9b9b9b
+      font-size inherit
+      position absolute
+      top 50%
+      right rem(6)
+      padding 0 rem(5)
+      transform translateY(-50%) scale(1.45)
+      z-index 1
+      background-color transparent
+      cursor pointer
+      transition all .15s ease
 
 
 
