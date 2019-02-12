@@ -55,8 +55,6 @@
 
   input
     flex 1
-    border-top-left-radius 0
-    border-bottom-left-radius 0
     margin 0
 
   >.zi-label
@@ -64,10 +62,8 @@
     justify-content center
     align-items center
     background-color #fafafa
-    border-bottom-left-radius 5px
-    border-top-left-radius 5px
+    border-radius 5px
     border-bottom 1px solid #e1e1e1
-    border-left 1px solid #e1e1e1
     border-top 1px solid #e1e1e1
     color #9b9b9b
     font-size rem(14)
@@ -79,22 +75,27 @@
     i
       margin 0 rem(4)
 
-  &.append
-    justify-content flex-end
-
+  &.suffix
     input
       border-top-right-radius 0
       border-bottom-right-radius 0
-      border-top-left-radius 5px
-      border-bottom-left-radius 5px
 
-    >.zi-label
+    >.zi-label.suffix
       border-left none
       border-right 1px solid #e1e1e1
-      border-top-right-radius 5px
-      border-bottom-right-radius 5px
       border-top-left-radius 0
       border-bottom-left-radius 0
+
+  &.prefix
+    input
+      border-top-left-radius 0
+      border-bottom-left-radius 0
+
+    >.zi-label.prefix
+      border-right none
+      border-left 1px solid #e1e1e1
+      border-top-right-radius 0
+      border-bottom-right-radius 0
 
   &.clearable
     position relative
