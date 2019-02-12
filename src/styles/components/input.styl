@@ -48,6 +48,15 @@
     height rem(42)
     line-height rem(38)
 
+.zi-input-group-empty
+  display inline-flex
+  border-radius 5px
+  background-color transparent
+
+  input
+    flex 1
+    margin 0
+
 .zi-input-group
   display inline-flex
   border-radius 5px
@@ -97,12 +106,13 @@
       border-top-right-radius 0
       border-bottom-right-radius 0
 
+.zi-input-group-empty, .zi-input-group
   &.clearable
     position relative
 
     input
-      border-radius 5px
       padding-right rem(28)
+
     i.close
       color #9b9b9b
       font-size inherit
