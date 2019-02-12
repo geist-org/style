@@ -33,6 +33,30 @@
     color $STATUS_SUCCESS
     border-color $STATUS_SUCCESS
 
+  &.small
+    font-size rem(12)
+    height rem(32)
+    line-height rem(22)
+
+  &.mini
+    font-size rem(12)
+    height rem(28)
+    line-height rem(20)
+
+  &.big, &.huge
+    font-size rem(16)
+    height rem(42)
+    line-height rem(38)
+
+.zi-input-group-empty
+  display inline-flex
+  border-radius 5px
+  background-color transparent
+
+  input
+    flex 1
+    margin 0
+
 .zi-input-group
   display inline-flex
   border-radius 5px
@@ -40,8 +64,6 @@
 
   input
     flex 1
-    border-top-left-radius 0
-    border-bottom-left-radius 0
     margin 0
 
   >.zi-label
@@ -49,10 +71,8 @@
     justify-content center
     align-items center
     background-color #fafafa
-    border-bottom-left-radius 5px
-    border-top-left-radius 5px
+    border-radius 5px
     border-bottom 1px solid #e1e1e1
-    border-left 1px solid #e1e1e1
     border-top 1px solid #e1e1e1
     color #9b9b9b
     font-size rem(14)
@@ -64,8 +84,47 @@
     i
       margin 0 rem(4)
 
+  &.suffix
+    input
+      border-top-right-radius 0
+      border-bottom-right-radius 0
 
+    >.zi-label.suffix
+      border-left none
+      border-right 1px solid #e1e1e1
+      border-top-left-radius 0
+      border-bottom-left-radius 0
 
+  &.prefix
+    input
+      border-top-left-radius 0
+      border-bottom-left-radius 0
+
+    >.zi-label.prefix
+      border-right none
+      border-left 1px solid #e1e1e1
+      border-top-right-radius 0
+      border-bottom-right-radius 0
+
+.zi-input-group-empty, .zi-input-group
+  &.clearable
+    position relative
+
+    input
+      padding-right rem(28)
+
+    i.close
+      color #9b9b9b
+      font-size inherit
+      position absolute
+      top 50%
+      right rem(6)
+      padding 0 rem(5)
+      transform translateY(-50%) scale(1.45)
+      z-index 1
+      background-color transparent
+      cursor pointer
+      transition all .15s ease
 
 
 

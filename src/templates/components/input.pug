@@ -29,19 +29,41 @@ br
     <input class="zi-input error" value="The Evil Rabbit">
     <input class="zi-input success" value="The Evil Rabbit">
     ```
+br
+p.zi-comment Size
+.zi-card
+  p
+    input.zi-input.mini(value='The  Evil Rabbit')
+    br
+    input.zi-input.small(value='The  Evil Rabbit')
+    br
+    input.zi-input(value='The  Evil Rabbit')
+    br
+    input.zi-input.big(value='The  Evil Rabbit')
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <input class="zi-input mini" value="The Evil Rabbit">
+    <input class="zi-input small" value="The Evil Rabbit">
+    <input class="zi-input" value="The Evil Rabbit">
+    <input class="zi-input big" value="The Evil Rabbit">
+    ```
 
 br
 p.zi-comment Input Group
 .zi-card
   p.zi-comment include icon
-  .zi-input-group
-    span.zi-label
+  .zi-input-group.prefix
+    span.zi-label.prefix
       i.zi-icon-mail
     input.zi-input(placeholder='The Evil Rabbit')
   br
   p.zi-comment include text
-  .zi-input-group
-    span.zi-label zeit.co/teams
+  .zi-input-group.prefix
+    span.zi-label.prefix zeit.co/teams
     input.zi-input(value='Zeit')
   p
 
@@ -51,13 +73,13 @@ br
   br
   :marked
     ```html
-    <div class="zi-input-group">
-      <span class="zi-label"><i class="zi-icon-mail"></i></span>
+    <div class="zi-input-group prefix">
+      <span class="zi-label prefix"><i class="zi-icon-mail"></i></span>
       <input class="zi-input" placeholder="The Evil Rabbit">
     </div>
 
-    <div class="zi-input-group">
-      <span class="zi-label">zeit.co/teams</span>
+    <div class="zi-input-group prefix">
+      <span class="zi-label prefix">zeit.co/teams</span>
       <input class="zi-input" value="Zeit">
     </div>
     ```
