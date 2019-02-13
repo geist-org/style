@@ -1,5 +1,6 @@
 br
 h3#tag Tag
+p.zi-comment Basic
 .zi-card
   .zi-tag Status: Unstable
 
@@ -12,6 +13,22 @@ br
     <div class="zi-tag">Status: Unstable</div>
     <span class="zi-tag">Status: Unstable</span>
     ```
+br
+p.zi-comment Status
+.zi-card
+  .zi-tag.success(style="margin-bottom: 10px;") Status: Success
+  br
+  .zi-tag.warning(style="margin-bottom: 10px;") Status: Warning
+  br
+  .zi-tag.danger Status: Danger
 
-
-
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <span class="zi-tag success">Status: Success</span>
+    <span class="zi-tag warning">Status: Warning</span>
+    <span class="zi-tag danger">Status: Danger</span>
+    ```
