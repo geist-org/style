@@ -2,6 +2,9 @@
   "name": "zeit-style",
   "version": 2,
   "alias": "zeit-style",
+  "github": {
+    "silent": true
+  },
   "builds": [
     { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "dist" } }
   ],
