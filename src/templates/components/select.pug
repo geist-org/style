@@ -7,10 +7,36 @@ h3#select Select
     option First option
     option Second option
   br
-  p.zi-comment small
+  p.zi-comment Small
   select.zi-select.small
     option First option
     option Second option
+  br
+  p.zi-comment Mini
+  select.zi-select.mini
+    option First option
+    option Second option
+  br
+  p.zi-comment Arrow icon
+  .zi-select-container
+    select.zi-select
+      option First option
+      option Second option
+    i.arrow.zi-icon-up
+  br
+  p.zi-comment Arrow icon small
+  .zi-select-container.small
+    select.zi-select
+      option First option
+      option Second option
+    i.arrow.zi-icon-up
+  br
+  p.zi-comment Arrow icon mini
+  .zi-select-container.mini
+    select.zi-select
+      option First option
+      option Second option
+    i.arrow.zi-icon-up
   p
 
 br
@@ -28,4 +54,25 @@ br
       <option>First option</option>
       <option>Second option</option>
     </select>
+
+    <select class="zi-select mini">
+      <option>First option</option>
+      <option>Second option</option>
+    </select>
+
+    <div class="zi-select-container">
+      <select class="zi-select">
+        <option>First option</option>
+        <option>Second option</option>
+      </select>
+      <i class="arrow zi-icon-up"></i>
+    </div>
+
+    <div class="zi-select-container small">
+      <select class="zi-select">
+        <option>First option</option>
+        <option>Second option</option>
+      </select>
+      <i class="arrow zi-icon-up"></i>
+    </div>
     ```

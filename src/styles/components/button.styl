@@ -199,10 +199,11 @@
     line-height rem(28)
     border none
 
-    &:hover
+    &:not(.loading):hover
       border none
-      color: black;
-      box-shadow: 0 5px 9px rgba(0, 0, 0, 0.08)
+      color black
+      &:not(.shadow):hover
+        box-shadow 0 5px 9px rgba(0, 0, 0, 0.08)
 
     i.prefix, i.suffix
       font-size rem(12)
