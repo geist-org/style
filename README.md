@@ -1,7 +1,7 @@
 ## Zeit Style
 <p align="left">
   <img src="https://circleci.com/gh/zeit-ui/zeit-style/tree/master.svg?style=svg"><span>&nbsp</span>
-  <img src="https://img.shields.io/badge/minzipped-9kb-green.svg?style=popout&colorB=01b301">
+  <img src="https://img.shields.io/badge/minzipped-11kb-green.svg?style=popout&colorB=01b301">
 </p>
 
 Zeit style is a modern css library, originating from [Zeit Design](https://zeit.co/design).
