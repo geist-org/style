@@ -228,3 +228,49 @@
 
   .big, .huge
     padding 0 rem(25)
+
+.zi-btn.ghost
+
+  &.primary
+    background-color white
+    border: 1px solid black
+    color black
+
+    &:not(.loading):hover
+      background black
+      color white
+      &:not(.shadow):hover
+        border 1px solid white
+
+  &.warning
+    border-color $STATUS_WARNING
+    background-color white
+    color $STATUS_WARNING
+
+    &:not(.loading):hover
+      color white
+      background $STATUS_WARNING
+      &:not(.shadow):hover
+        border-color white
+
+  &.danger, &.error
+    border-color $STATUS_DANGER
+    background-color white
+    color $STATUS_DANGER
+
+    &:not(.loading):hover
+      color white
+      background $STATUS_DANGER
+      &:not(.shadow):hover
+        border-color white
+
+  &.success
+    border-color $STATUS_SUCCESS
+    background-color white
+    color $STATUS_SUCCESS
+
+    &:not(.loading):hover
+      color white
+      background: $STATUS_SUCCESS
+      &:not(.shadow):hover
+        border-color white
