@@ -16,6 +16,7 @@ module.exports = merge(base, {
   devServer: {
     historyApiFallback: true,
     stats: 'minimal',
+    port: 3333,
   },
 
   plugins: [
