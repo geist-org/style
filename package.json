@@ -9,7 +9,7 @@
     "release": "yarn run build && yarn publish --access public",
     "start": "webpack-dev-server --config ./scripts/webpack.dev.js --progress",
     "build": "rm -rf ./dist && webpack --config ./scripts/webpack.prod.js --progress",
-    "now-build": "NODE_ENV=production npm run build"
+    "now-build": "NODE_ENV=production yarn run build"
   },
   "files": [
     "LICENSE",
