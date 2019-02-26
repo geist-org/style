@@ -6,32 +6,32 @@
   border 1px solid #999
   border-radius 50%
   position relative
+  &:before
+    content: ''
+    position absolute
+    top rem(2)
+    left rem(2)
+    height rem(7)
+    width rem(7)
+    border 1px solid #000
+    border-radius 50%
+    background-color #000
+    transform: scale(0);
+    transition: transform .15s ease-in;
+
   &.disabled
-    border 1px solid #ccc
+    border-color #ccc
     background-color #fafafa
     cursor not-allowed
+
   &.checked
     &:before
-      content: ''
-      position absolute
-      top rem(2)
-      left rem(2)
-      height rem(7)
-      width rem(7)
-      border 1px solid #000
-      border-radius 50%
-      background-color #000
+      transform: scale(1);
+
     &.disabled
       background-color #fafafa
       &:before
-        content: ''
-        position absolute
-        left rem(2)
-        top rem(2)
-        height rem(7)
-        width rem(7)
-        border 1px solid #ccc
-        border-radius 50%
+        border-color #ccc
         background-color #ccc
 
 .zi-radio-group
@@ -68,5 +68,3 @@
     padding 0
     z-index -1
     background-color transparent
-
-
