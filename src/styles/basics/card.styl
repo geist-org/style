@@ -10,9 +10,12 @@
     margin 5px 0
     line-height rem(24)
 
-  &:hover
+  &:not(.pin):hover
     box-shadow 0 5px 10px 0 rgba(0, 0, 0, 0.12)
 
+  &.pin
+    border 1px solid rgb(234, 234, 234)
+    box-shadow none
 
 
 .zi-dark .zi-card, .zi-card.zi-dark
