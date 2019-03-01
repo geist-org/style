@@ -25,11 +25,10 @@
   border 1px solid #eaeaea
   color #666
 
-  &:not(.loading):hover
+  &:not(.loading):not(.shadow):hover
     color black
     background white
-    &:not(.shadow):hover
-      border-color black
+    border-color black
 
 .zi-btn
   &.mini
@@ -58,44 +57,40 @@
     border: 1px solid black
     color white
 
-    &:not(.loading):hover
+    &:not(.loading):not(.shadow):hover
       background white
       color black
-      &:not(.shadow):hover
-        border 1px solid black
+      border 1px solid black
 
   &.warning
     border-color $STATUS_WARNING
     background-color $STATUS_WARNING
     color white
 
-    &:not(.loading):hover
+    &:not(.loading):not(.shadow):hover
       color $STATUS_WARNING
       background white
-      &:not(.shadow):hover
-        border-color $STATUS_WARNING
+      border-color $STATUS_WARNING
 
   &.danger, &.error
     border-color $STATUS_DANGER
     background-color $STATUS_DANGER
     color white
 
-    &:not(.loading):hover
+    &:not(.loading):not(.shadow):hover
       color $STATUS_DANGER
       background white
-      &:not(.shadow):hover
-        border-color $STATUS_DANGER
+      border-color $STATUS_DANGER
 
   &.success
     border-color $STATUS_SUCCESS
     background-color $STATUS_SUCCESS
     color #fff
 
-    &:not(.loading):hover
+    &:not(.loading):not(.shadow):hover
       color $STATUS_SUCCESS
       background: #fff
-      &:not(.shadow):hover
-        border-color $STATUS_SUCCESS
+      border-color $STATUS_SUCCESS
 
   &.abort
     background-color transparent
@@ -199,11 +194,10 @@
     line-height rem(28)
     border none
 
-    &:not(.loading):hover
+    &:not(.loading):not(.shadow):hover
       border none
       color black
-      &:not(.shadow):hover
-        box-shadow 0 5px 9px rgba(0, 0, 0, 0.08)
+      box-shadow 0 5px 9px rgba(0, 0, 0, 0.08)
 
     i.prefix, i.suffix
       font-size rem(12)
@@ -236,41 +230,37 @@
     border: 1px solid black
     color black
 
-    &:not(.loading):hover
+    &:not(.loading):not(.shadow):hover
       background black
       color white
-      &:not(.shadow):hover
-        border 1px solid white
+      border 1px solid white
 
   &.warning
     border-color $STATUS_WARNING
     background-color white
     color $STATUS_WARNING
 
-    &:not(.loading):hover
+    &:not(.loading):not(.shadow):hover
       color white
       background $STATUS_WARNING
-      &:not(.shadow):hover
-        border-color white
+      border-color white
 
   &.danger, &.error
     border-color $STATUS_DANGER
     background-color white
     color $STATUS_DANGER
 
-    &:not(.loading):hover
+    &:not(.loading):not(.shadow):hover
       color white
       background $STATUS_DANGER
-      &:not(.shadow):hover
-        border-color white
+      border-color white
 
   &.success
     border-color $STATUS_SUCCESS
     background-color white
     color $STATUS_SUCCESS
 
-    &:not(.loading):hover
+    &:not(.loading):not(.shadow):hover
       color white
       background: $STATUS_SUCCESS
-      &:not(.shadow):hover
-        border-color white
+      border-color white
