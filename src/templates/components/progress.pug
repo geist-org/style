@@ -2,19 +2,17 @@ br
 h3#progress Progress
 .zi-card
   p.zi-comment Empty
-    div.zi-progress-container
-      div.zi-progress-bar
-        div.zi-progress
-          div.zi-progress__inner
-        span.zi-progress__text 0
+    div.zi-progress-bar
+      div.zi-progress
+        div.zi-progress__inner
+      span.zi-progress__text 0
 
   br
   p.zi-comment active
-      div.zi-progress-container
-        div.zi-progress-bar
-          div.zi-progress
-            div.zi-progress__inner(style="width: 50%")
-          span.zi-progress__text 50
+    div.zi-progress-bar
+      div.zi-progress
+        div.zi-progress__inner(style="width: 50%")
+      span.zi-progress__text 50
 
 br
 .zi-example
@@ -22,21 +20,17 @@ br
   br
   :marked
     ```html
-    <div class="zi-progress-container">
-      <div class="zi-progress-bar">
-        <div class="zi-progress">
-          <div class="zi-progress__inner"></div>
-        </div>
-        <span class="zi-progress__text">0</span>
+    <div class="zi-progress-bar">
+      <div class="zi-progress">
+        <div class="zi-progress__inner"></div>
       </div>
+      <span class="zi-progress__text">0</span>
     </div>
 
-    <div class="zi-progress-container">
-      <div class="zi-progress-bar">
-        <div class="zi-progress">
-          <div class="zi-progress__inner" style="width: 50%"></div>
-        </div>
-        <span class="zi-progress__text">50</span>
+    <div class="zi-progress-bar">
+      <div class="zi-progress">
+        <div class="zi-progress__inner" style="width: 50%"></div>
       </div>
+      <span class="zi-progress__text">50</span>
     </div>
     ```
