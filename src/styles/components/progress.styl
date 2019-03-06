@@ -2,17 +2,43 @@
   display inline-flex
   justify-content space-between
   align-items center
+  height rem(6)
+  margin-right rem(20)
+
+  &.top
+    position fixed
+    height rem(3)
+    width 100vw
+    top 0
+    left 0
+    z-index 9999
+    overflow hidden
+
+  &.bottom
+    position fixed
+    height rem(3)
+    width 100vw
+    bottom 0
+    left 0
+    z-index 9999
+    overflow hidden
 
   .zi-progress
     width rem(300)
-    height rem(6)
+    height 100%
     background-color #ebeef5
     border-radius rem(4)
     margin-right rem(10)
 
+    &.top
+      width 100%
+
+    &.bottom
+      width 100%
+
     .zi-progress__inner
       width 0
-      height rem(6)
+      height 100%
       background-color #000
       border-radius 4px
       transition: width 0.6s ease, background-color 1s ease
