@@ -1,17 +1,56 @@
 .zi-pagination-container
   width 100%
+  display inline-flex
+  align-items center
+  &.border
+    .zi-page-num
+      display inline-block
+      border 1px solid #666
+      min-width rem(25)
+      height rem(25)
+      vertical-align top
+      padding 0 rem(4)
+      line-height rem(25)
+      text-align center
+      border-radius rem(4)
+      font-size 10px
+      &:hover
+        border-color #409eff
+
+.zi-page-pointer
+  cursor pointer
+  &.disabled
+    cursor not-allowed
+    color #666
+    :hover
+      color #666
+  :hover
+    color #409eff
 
 .zi-pagination
   display inline-flex
   :hover
     color #409eff
 
-.zi-num
-  margin 0 5px
-  padding 3px 3px
+.zi-page-num
+  margin 0 rem(8)
+  text-align center
   cursor pointer
   user-select none
 
+.zi-page-jump
+  margin-left rem(15)
+
+.zi-page-pager
+  height rem(25)
+  line-height rem(25)
+  border-radius 4px
+  border 1px solid #666
+  width rem(45)
+  text-align center
+  cursor pointer
+  &:focus
+    border-color #409eff
+
 .active
   color #409eff
-

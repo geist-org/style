@@ -3,16 +3,78 @@ h3#pagination Pagination
 .zi-card
   p.zi-comment Default pagination
   .zi-pagination-container
-    span.zi-pagination-left
-      i.suffix.zi-icon-left
+    span.zi-page-pointer
+      i.suffix.zi-icon-zuo
     div.zi-pagination
-      span.zi-num 1
-      span.zi-num ...
-      span.zi-num 3
-      span.zi-num 4
-      span.zi-num 5
-      span.zi-num 6
-      span.zi-num 7
-      span.zi-num ...
-      span.zi-num 50
-    span.zi-pagination-right >
+      span.zi-page-num 1
+      span.zi-page-num 2
+      span.zi-page-num 3
+      span.zi-page-num 4
+      span.zi-page-num
+        i.suffix.zi-icon-icon_more
+      span.zi-page-num 100
+    span.zi-page-pointer
+      i.suffix.zi-icon-you
+    .zi-page-jump TO
+      input.zi-page-pager
+
+  p.zi-comment Border pagination
+    .zi-pagination-container.border
+      span.zi-page-pointer
+        i.suffix.zi-icon-zuo
+      div.zi-pagination
+        span.zi-page-num 1
+        span.zi-page-num 2
+        span.zi-page-num 3
+        span.zi-page-num 4
+      span.zi-page-pointer.disabled
+        i.suffix.zi-icon-you
+      .zi-page-jump TO
+        input.zi-page-pager
+
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <div class="zi-pagination-container">
+      <span class="zi-page-pointer">
+        <i class="suffix zi-icon-zuo"></i>
+      </span>
+      <div class="zi-pagination">
+        <span class="zi-page-num">1</span>
+        <span class="zi-page-num">2</span>
+        <span class="zi-page-num">3</span>
+        <span class="zi-page-num">4</span>
+        <span class="zi-page-num">
+          <i class="suffix zi-icon-icon_more"></i>
+        </span>
+        <span class="zi-page-num">100</span>
+      </div>
+      <span class="zi-page-pointer">
+        <i class="suffix zi-icon_you"></i>
+      </span>
+      <div class="zi-page-jump"> TO
+        <input class="zi-page-pager">
+      </div>
+    </div>
+
+    <div class="zi-pagination-container border">
+      <span class="zi-page-pointer">
+        <i class="suffix zi-icon-zuo"></i>
+      </span>
+      <div class="zi-pagination">
+        <span class="zi-page-num">1</span>
+        <span class="zi-page-num">2</span>
+        <span class="zi-page-num">3</span>
+        <span class="zi-page-num">4</span>
+      </div>
+      <span class="zi-page-pointer">
+        <i class="suffix zi-icon_you"></i>
+      </span>
+      <div class="zi-page-jump"> TO
+        <input class="zi-page-pager">
+      </div>
+    </div>
+    ```
