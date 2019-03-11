@@ -1,0 +1,33 @@
+.zi-textarea
+  sans()
+  display inline-flex
+  align-items center
+  vertical-align middle
+  box-shadow none
+  box-sizing border-box
+  border 1px solid #e1e1e1
+  border-radius 5px
+  resize none
+  min-height 100px
+  min-width 270px
+  margin 4px 10px
+  padding rem(8)
+  background-color transparent
+  font-size 1rem
+  line-height rem(20)
+  transition border 0.2s ease 0s, color 0.2s ease 0s
+
+  &:focus
+    border-color #888
+
+  &.disabled
+    background #fafafa
+    color #999
+    cursor not-allowed
+
+  &.error
+    color $STATUS_ERROR
+    border-color $STATUS_ERROR
+
+  &::-webkit-input-placeholder
+    color #dadada

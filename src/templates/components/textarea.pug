@@ -1,0 +1,26 @@
+br
+h3#textarea Textarea
+p.zi-comment Basic textarea
+.zi-card
+  p.zi-comment Normal
+  p
+    textarea.zi-textarea(placeholder="The evil rabbit jumps over the fence. The evil rabbit jumps over the fence.")
+  br
+  p.zi-comment.disabled Disabled
+  p
+    textarea.zi-textarea.disabled(placeholder='The evil rabbit jumps over the fence. The evil rabbit jumps over the fence.' disabled)
+  br
+  p.zi-comment.disabled Error
+  p
+    textarea.zi-textarea.error The evil rabbit jumps over the fence. The evil rabbit jumps over the fence.
+
+br
+.zi-example
+  span html code:
+  br
+  :marked
+    ```html
+    <textarea class="zi-textarea" placeholder="The evil rabbit"></textarea>
+    <textarea class="zi-textarea disabled" disabled placeholder="The evil rabbit"></textarea>
+    <textarea class="zi-textarea error">The evil rabbit</textarea>
+    ```
