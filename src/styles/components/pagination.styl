@@ -2,23 +2,14 @@
   width 100%
   display inline-flex
   align-items center
-  &.border
-    .zi-page-num
-      display inline-block
-      border 1px solid #666
-      min-width rem(25)
-      height rem(25)
-      vertical-align top
-      padding 0 rem(4)
-      line-height rem(25)
-      text-align center
-      border-radius rem(4)
-      font-size 10px
-      &:hover
-        border-color #409eff
 
 .zi-page-pointer
   cursor pointer
+  min-width rem(28)
+  height rem(25)
+  line-height rem(25)
+  text-align center
+  font-size rem(16)
   &.disabled
     cursor not-allowed
     color #666
@@ -31,12 +22,19 @@
   display inline-flex
   :hover
     color #409eff
+    font-size 16px
+    .dot
+      background-color #409eff
+      margin rem(2)
 
 .zi-page-num
   margin 0 rem(8)
   text-align center
   cursor pointer
   user-select none
+  min-width rem(28)
+  height rem(25)
+  line-height rem(25)
 
 .zi-page-jump
   margin-left rem(15)
@@ -44,13 +42,24 @@
 .zi-page-pager
   height rem(25)
   line-height rem(25)
-  border-radius 4px
-  border 1px solid #666
-  width rem(45)
+  border-top 1px solid #666
+  border-left none
+  border-right none
+  border-bottom 1px solid #666
+  width rem(30)
   text-align center
   cursor pointer
+  margin-left rem(4)
   &:focus
     border-color #409eff
+
+.dot
+  display inline-block
+  width 4px
+  height 4px
+  border-radius 50%
+  background-color #444
+  margin rem(2) rem(1)
 
 .active
   color #409eff
