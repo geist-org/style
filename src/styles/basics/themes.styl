@@ -1,0 +1,60 @@
+.zi-dark-theme
+  background-color black
+  color white
+
+  html, body
+    background-color black
+
+  .zi-main, .zi-layout
+    background-color black
+
+    &:before
+      position fixed
+      top -100px
+      left -100px
+      right -100px
+      bottom -100px
+      background-color black
+      content ''
+      z-index -1
+
+  a
+    color #dadada
+    font-weight 700
+    transition all .16s ease
+    &:hover
+      color white
+
+  p, ul, li, code, pre
+    color #aaa
+
+  h4, h5, h6
+    color #eaeaea
+
+  b, h1, h2, h3
+    color white
+
+  .zi-card
+    border 1px solid #aaa
+    background-color transparent
+
+  .zi-note
+    background-color transparent
+    color #eaeaea
+
+  .zi-note-type
+    color #eaeaea
+
+  table
+    th
+      background-color transparent
+      color #ddd
+      border-color #8a8a8a
+
+    th:nth-child(1), th:last-child
+      border-color #8a8a8a
+
+    tr td
+      color #aaa
+      border-bottom-color #9a9a9a
+
