@@ -21,6 +21,12 @@ Zeit style is a modern css library, originating from [Zeit Design](https://zeit.
 
 <br/>
 
+## Showcases
+
+- vue auto import: [vue-auto](https://vue-auto.lambdas.dev/)
+
+<br/>
+
 ## LICENSE
 [MIT](LICENSE)
 
