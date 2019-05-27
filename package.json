@@ -1,6 +1,6 @@
 {
   "name": "@zeit-ui/style",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "style for zeit",
   "main": "dist/style.css",
   "module": "dist/style.css",
@@ -15,6 +15,10 @@
     "LICENSE",
     "dist/"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeit-ui/zeit-style.git"
+  },
   "author": "WittBulter (nanazuimeng123@gmail.com)",
   "license": "MIT",
   "husky": {
