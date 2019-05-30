@@ -27,7 +27,10 @@
       color white
 
   p, ul, li, pre, pre code
-    color #a4a4a4
+    color rgb(235, 235, 235)
+
+  blockquote
+    color #bdbdbd
 
   h4, h5, h6
     color #eaeaea
@@ -39,11 +42,15 @@
     border-color #5E6064
 
   .zi-card
-    border 1px solid #aaa
-    background-color transparent
+    border none
+    box-shadow: rgb(65, 65, 65) 0px 0px 0px 1px
+    background-color black
+
+    &:hover
+      box-shadow: rgb(51, 51, 51) 0px 0px 0px 1px
 
   .zi-note
-    background-color transparent
+    background-color black
     color #eaeaea
 
   .zi-note-type

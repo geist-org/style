@@ -21,6 +21,19 @@ a
   &:hover
     text-decoration underline
 
+blockquote
+  margin .9rem 0
+  padding 0
+  color #666
+
+  &::before
+    display inline-block
+    content ''
+    margin-right 5px
+    height 10px
+    width 5px
+    background-color rgb(153, 153, 153)
+
 .zi-dark span
   color #aaa
 
@@ -40,7 +53,7 @@ a
   font-weight 400
   cursor default
   letter-spacing 1.3px
-  
+
 .zi-caption
   color $COLOR_CAPTION
   font-size rem(12)
