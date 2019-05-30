@@ -25,8 +25,15 @@ blockquote
   margin .9rem 0
   padding 0
   color #666
+  position: relative
+  width: max-content
+  padding-left 7px
 
   &::before
+    position absolute
+    top 50%
+    left 0
+    transform translateY(-50%)
     display inline-block
     content ''
     margin-right 5px
