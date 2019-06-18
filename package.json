@@ -5,7 +5,7 @@
   "main": "dist/style.css",
   "module": "dist/style.css",
   "scripts": {
-    "release": "yarn run build && yarn publish --access public",
+    "release": "yarn run build && yarn publish --access public --non-interactive",
     "start": "webpack-dev-server --config ./scripts/webpack.dev.js --progress",
     "build": "rm -rf ./dist && webpack --config ./scripts/webpack.prod.js --progress",
     "now-build": "NODE_ENV=production yarn run build"
