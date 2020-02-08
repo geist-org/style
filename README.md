@@ -6,6 +6,8 @@
 
 Zeit style is a modern css library, originating from [Zeit Design](https://zeit.co/design).
 
+There's only styles here. If you're looking for a front-end library, please reference [zeit-ui/vue](https://github.com/zeit-ui/vue).
+
 <br/>
 
 ## Usage
@@ -22,6 +24,8 @@ Zeit style is a modern css library, originating from [Zeit Design](https://zeit.
 <br/>
 
 ## Showcases
+
+- jsdelivr console for NPM projects [jsdelivr](https://jsdelivr.now.sh/)
 
 - vue auto import: [vue-auto](https://vue-auto.lambdas.dev/)
 

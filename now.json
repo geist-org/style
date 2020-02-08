@@ -5,11 +5,8 @@
   "github": {
     "silent": true
   },
-  "builds": [
-    { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "dist" } }
-  ],
-  "routes": [
-    {"src": "^/assets/(.*)", "dest": "/assets/$1"},
-    {"src": ".html", "dest": "/index.html"}
+  "rewrites": [
+    {"source": "^/assets/(.*)", "destination": "/assets/$1"},
+    {"source": ".html", "destination": "/index.html"}
   ]
 }
