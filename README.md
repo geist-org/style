@@ -1,6 +1,6 @@
 ## Geist Style
 <p align="left">
-  <img src="https://circleci.com/gh/geist-ui/style/tree/master.svg?style=svg"><span>&nbsp</span>
+  <img src="https://circleci.com/gh/geist-org/style/tree/master.svg?style=svg"><span>&nbsp</span>
   <img src="https://img.shields.io/badge/minzipped-11kb-green.svg?style=popout&colorB=01b301">
 </p>
 
