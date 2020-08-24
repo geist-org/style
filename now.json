@@ -1,7 +1,5 @@
 {
-  "name": "zeit-style",
   "version": 2,
-  "alias": "zeit-style",
   "github": {
     "silent": true
   },
