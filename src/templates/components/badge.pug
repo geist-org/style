@@ -1,30 +1,22 @@
 br
 h3#badges Badges
-p.zi-comment Basic badges
+p Basic badges
 .zi-card
-  p.zi-comment Default badges
+  p Default badges
   p
     span.zi-badge(style='margin-right: 10px') 5
     span.zi-badge(style='margin-right: 10px') 50
     span.zi-badge(style='margin-right: 10px') 100
-  br
-  p.zi-comment Red badges
-  p
-    span.zi-badge.red(style='margin-right: 10px') 5
-    span.zi-badge.red(style='margin-right: 10px') 50
-    span.zi-badge.red(style='margin-right: 10px') 100
 br
 .zi-example
   span html code:
-  br
   :marked
     ```html
     <span class="zi-badge">5</span>
-    <span class="zi-badge red">5</span>
     ```
 
 br
-p.zi-comment Status
+p Status
 .zi-card
   p
     span.zi-badge(style='margin-right: 10px') 5
@@ -35,44 +27,10 @@ p.zi-comment Status
 br
 .zi-example
   span html code:
-  br
   :marked
     ```html
     <span class="zi-badge">5</span>
     <span class="zi-badge success">50</span>
     <span class="zi-badge warning">50</span>
     <span class="zi-badge error">50</span>
-    ```
-
-br
-p.zi-comment Combination
-.zi-card
-  p
-    span.zi-badge-group(style='margin-right: 30px')
-      img.zi-avatar.square(src='./assets/avatar.png')
-      sup.zi-badge.red 10+
-  br
-  p this is a&nbsp
-    span.zi-badge-group
-      a link
-      sup.zi-badge.red.dot
-    |.
-br
-.zi-example
-  span html code:
-  br
-  :marked
-    ```html
-    <span class="zi-badge-group">
-      <img class="zi-avatar square" src="...">
-      <sup class="zi-badge">10+</sup>
-    </span>
-
-    <p>
-      this is a
-      <span class="zi-badge-group">
-        <a href="...">link</a>
-        <sup class="zi-badge dot"></sup>
-      </span>
-    </p>
     ```

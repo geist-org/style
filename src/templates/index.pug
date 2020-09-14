@@ -24,6 +24,11 @@ html(lang="en")
     script(src='https://www.googletagmanager.com/gtag/js?id=UA-110371817-2' async)
     script.
       (function(){
+        window.toggleTheme = () => {
+          const html = document.querySelector('html')
+          const next = html.classList.contains('dark-theme') ? '' : 'dark-theme'
+          html.setAttribute('class', next)
+        };
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date())

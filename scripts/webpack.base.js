@@ -13,7 +13,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.css', '.styl', '.png'],
   },
-
+  
   module: {
     rules: [
     {
@@ -29,7 +29,12 @@ module.exports = {
         fallback: 'style-loader',
         use: [
           'css-loader',
-          'stylus-loader',
+          {
+            loader: 'stylus-loader',
+            options: {
+              resolveUrl: true,
+            },
+          },
         ],
       }),
     },

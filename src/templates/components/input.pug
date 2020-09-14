@@ -1,27 +1,26 @@
 br
 h3#inputs Inputs
-p.zi-comment Basic inputs
+p Basic inputs
 .zi-card
-  p.zi-comment Normal
+  p Normal
   p
     input.zi-input(placeholder='The Evil Rabbit')
   br
-  p.zi-comment.disabled Disabled
+  p.disabled Disabled
   p
     input.zi-input.disabled(placeholder='The Evil Rabbit' disabled)
   br
-  p.zi-comment Error
+  p Error
   p
     input.zi-input.error(value='The Evil Rabbit')
   br
-  p.zi-comment Success
+  p Success
   p
     input.zi-input.success(value='The Evil Rabbit')
 
 br
 .zi-example
   span html code:
-  br
   :marked
     ```html
     <input class="zi-input" placeholder="The Evil Rabbit">
@@ -30,7 +29,7 @@ br
     <input class="zi-input success" value="The Evil Rabbit">
     ```
 br
-p.zi-comment Size
+p Size
 .zi-card
   p
     input.zi-input.mini(value='The  Evil Rabbit')
@@ -43,7 +42,6 @@ p.zi-comment Size
 br
 .zi-example
   span html code:
-  br
   :marked
     ```html
     <input class="zi-input mini" value="The Evil Rabbit">
@@ -53,15 +51,9 @@ br
     ```
 
 br
-p.zi-comment Input Group
+p Input Group
 .zi-card
-  p.zi-comment include icon
-  .zi-input-group.prefix
-    span.zi-label.prefix
-      i.zi-icon-mail
-    input.zi-input(placeholder='The Evil Rabbit')
-  br
-  p.zi-comment include text
+  p include text
   .zi-input-group.prefix
     span.zi-label.prefix gesit-ui/react
     input.zi-input(value='Geist')
@@ -70,14 +62,8 @@ p.zi-comment Input Group
 br
 .zi-example
   span html code:
-  br
   :marked
     ```html
-    <div class="zi-input-group prefix">
-      <span class="zi-label prefix"><i class="zi-icon-mail"></i></span>
-      <input class="zi-input" placeholder="The Evil Rabbit">
-    </div>
-
     <div class="zi-input-group prefix">
       <span class="zi-label prefix">geist-ui/react</span>
       <input class="zi-input" value="Geist">

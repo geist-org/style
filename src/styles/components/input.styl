@@ -1,56 +1,55 @@
 .zi-input
-  sans()
+  font-family var(--font-sans)
   padding 0 rem(11)
   display inline-flex
   vertical-align middle
   align-items center
-  border-radius 5px
+  border-radius var(--geist-radius)
   background-color transparent
-  font-size rem(14)
+  font-size .875rem
   height rem(37)
   line-height rem(27)
   width initial
   outline 0
   box-sizing border-box
   margin 4px 10px
-  border 1px solid #e1e1e1
+  border 1px solid var(--accents-2)
   -webkit-appearance none
   transition border 0.2s ease, color 0.2s ease
 
   &:focus
-    border-color #888
+    border-color var(--accents-5)
 
   &.disabled
-    background #fafafa
-    color #999
+    background var(--accents-1)
     cursor not-allowed
 
   &.error
-    color $STATUS_ERROR
-    border-color $STATUS_ERROR
+    color var(--geist-error)
+    border-color var(--geist-error)
 
   &.success
-    color $STATUS_SUCCESS
-    border-color $STATUS_SUCCESS
+    color var(--geist-success)
+    border-color var(--geist-success)
 
   &.small
-    font-size rem(12)
+    font-size .75rem
     height rem(32)
     line-height rem(22)
 
   &.mini
-    font-size rem(12)
+    font-size .75rem
     height rem(28)
     line-height rem(20)
 
   &.big, &.huge
-    font-size rem(16)
+    font-size 1rem
     height rem(42)
     line-height rem(38)
 
 .zi-input-group-empty
   display inline-flex
-  border-radius 5px
+  border-radius var(--geist-radius)
   background-color transparent
 
   input
@@ -59,7 +58,7 @@
 
 .zi-input-group
   display inline-flex
-  border-radius 5px
+  border-radius var(--geist-radius)
   background-color transparent
 
   input
@@ -70,11 +69,11 @@
     display inline-flex
     justify-content center
     align-items center
-    background-color #fafafa
-    border-radius 5px
-    border-bottom 1px solid #e1e1e1
-    border-top 1px solid #e1e1e1
-    color #9b9b9b
+    background-color var(--accents-1)
+    border-radius var(--geist-radius)
+    border-bottom 1px solid var(--accents-2)
+    border-top 1px solid var(--accents-2)
+    color var(--accents-6)
     font-size rem(14)
     line-height 1
     width initial
@@ -91,7 +90,7 @@
 
     >.zi-label.suffix
       border-left none
-      border-right 1px solid #e1e1e1
+      border-right 1px solid var(--accents-2)
       border-top-left-radius 0
       border-bottom-left-radius 0
 
@@ -102,7 +101,7 @@
 
     >.zi-label.prefix
       border-right none
-      border-left 1px solid #e1e1e1
+      border-left 1px solid var(--accents-2)
       border-top-right-radius 0
       border-bottom-right-radius 0
 

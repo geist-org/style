@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@geist-ui/themes@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@geist-ui/themes/-/themes-1.1.0.tgz#3644195ae699eb904ccf29677e8ab51b050d74d1"
+  integrity sha512-N13wlIOeEU8QkOu4mxg5AcF7DpfLNBcZhW/YDMRVEch0ehPl8Y+g4/JW1A4uT6E5W3USSybslmhjFZ7HH8T2LA==
+
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@types/babel-types/-/babel-types-7.0.7.tgz#667eb1640e8039436028055737d2b9986ee336e3"

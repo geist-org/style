@@ -1,7 +1,7 @@
 .zi-badge
   padding: 0 4px
-  background-color black
-  color: #fff
+  background-color var(--geist-foreground)
+  color: var(--geist-background)
   display: inline-block
   font-size rem(10)
   font-weight bold
@@ -10,17 +10,14 @@
   border-radius 8px
   text-align center
 
-  &.red
-    background-color red
-
   &.success
-    background-color $STATUS_SUCCESS
+    background-color var(--geist-success)
 
   &.warning
-    background-color $STATUS_WARNING
+    background-color var(--geist-warning)
 
   &.error, &.danger
-    background-color $STATUS_ERROR
+    background-color var(--geist-error)
 
   &.dot
     width rem(6)
@@ -31,15 +28,3 @@
     overflow hidden
     line-height 0
     color transparent
-
-.zi-badge-group
-  position relative
-  display inline-block
-
-  .zi-badge
-    position absolute
-    right 0
-    top 0
-    transform translate(50%, -50%)
-    vertical-align baseline
-
