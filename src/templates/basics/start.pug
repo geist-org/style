@@ -1,23 +1,20 @@
-h3 Start
-p You need import style in your project:
+b 1. Install:
+pre.zi-bash npm i @geist-ui/style
+
+b 2. Import to project:
 :marked
   ```js
   import '@geist-ui/style'
   ```
-p In a simpler way, you can also use link of css: #[a(href='https://cdn.jsdelivr.net/npm/@geist-ui/style@latest/dist/style.css' target='_blank') jsdelivr cdn].
-  br
-  | Add class name to #[code body] element will start the using:
-:marked
-  ```html
-  <body class="zi-main zi-layout"></body>
-  ```
 
-<br/>
+b 3. In a simpler way, you can also use link of CDN: #[a(href='https://cdn.jsdelivr.net/npm/@geist-ui/style@latest/dist/style.css' target='_blank') jsdelivr cdn]
+
+br
 h4 * Dark theme (optional)
-p(style='margin-top: -15px;') * The dark theme need add class name #[code zi-dark-theme] to html tag:
+small * The dark theme need add class name #[a(href="javascript:;" onclick="toggleTheme()") dark-theme] to html tag:
 :marked
   ```html
-  <html class="zi-dark-theme">
+  <html class="dark-theme">
   ...
   </html>
   ```

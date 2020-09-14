@@ -1,14 +1,16 @@
 pre
-  mono()
-  light()
   background-color transparent
-  border 1px solid #eaeaea
-  margin 0
-  padding rem(20)
-  font-size rem(13)
-  overflow auto
+  border 1px solid var(--accents-2)
+  border-radius var(--geist-radius)
+  padding calc(var(--geist-gap) * 0.75) var(--geist-gap)
+  margin var(--geist-gap) 0
+  font-family var(--font-mono)
   white-space pre
-  line-height rem(20)
+  overflow auto
+  line-height 1.5
+  text-align left
+  font-size 0.8125rem
+  -webkit-overflow-scrolling touch
 
   &.zi-bash:before
     content '$ '
@@ -16,26 +18,32 @@ pre
   span, p
     font-size inherit
     color inherit
+    margin 0
 
   code
-    font-size inherit
-    color inherit
+    color var(--geist-foreground)
+    font-size 0.8125rem
+    line-height 1.25rem
+    white-space pre
 
     &:before, &:after
-      content ''
+      display none
 
-pre.zi-dark
-  background black
-  color: white
+  &::-webkit-scrollbar
+    display none
+    width 0
+    height 0
+    background transparent
 
 code
-  mono()
-  font-size rem(13)
-  color #d400ff
+  color var(--geist-code)
+  font-family var(--font-mono)
+  font-size 0.9em
   white-space pre-wrap
 
-  &:before, &:after
-    content '`'
+  &:before,
+  &:after
+    content: '\`'
 
 .zi-bash
   pre:before

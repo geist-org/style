@@ -1,0 +1,30 @@
+.zi-card
+  margin 0
+  padding var(--geist-gap) var(--geist-gap)
+  width 100%
+  transition all 0.2s ease
+  border-radius var(--geist-radius)
+  box-shadow none
+  box-sizing border-box
+  color var(--geist-foreground)
+  background-color var(--geist-background)
+  border 1px solid var(--accents-2)
+
+  &:hover
+    box-shadow var(--shadow-small)
+
+  img
+    max-width 100%
+
+  *:first-child
+    margin-top 0
+
+  *:last-child
+    margin-bottom 0
+
+  &:not(.pin):hover
+    box-shadow var(--shadow-small)
+
+  &.pin
+    border 1px solid var(--accents-2)
+    box-shadow none

@@ -1,16 +1,21 @@
-sans()
-  font-family -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Avenir', 'PingFang SC', 'Helvetica Neue', Helvetica
-
-mono()
-  font-family Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif
-
-light()
-  color #000
-
-drak()
-  color #fff
-
 rem(input)
-  input / 14 rem
+  input / 16 rem
+
+layout(size = '')
+  if (size == xs)
+    @media only screen and (max-width 650px)
+      {block}
+  else if (size == sm)
+    @media screen and (min-width 650px) and (max-width 900px)
+      {block}
+  else if (size == md)
+    @media screen and (min-width 900px) and (max-width 1280px)
+      {block}
+  else if (size == lg)
+    @media screen and (min-width 1280px) and (max-width 1920px)
+      {block}
+  else
+    @media only screen and (max-width 1920px)
+      {block}
 
 

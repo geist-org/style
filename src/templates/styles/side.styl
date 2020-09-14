@@ -1,9 +1,11 @@
-@import "../../styles/vars/index.styl"
-@import "../../styles/responsive.styl"
+@import "../../styles/methods.styl"
 
 .ex-side
   display flex
   min-width 200px
+
+  a
+   font-size .9em
 
 .ex-side-content
   position fixed
@@ -17,10 +19,6 @@
     width: 0 !important
     display none !important
 
-  a
-    color black
-    font-size 14px
-
   li
     list-style none
     &:before
@@ -29,6 +27,10 @@
   ul
     margin-left 0
 
+.zi-title
+  color var(--accents-3)
+  text-transform uppercase
+  font-size .8em
 
 .ex-side, .ex-side-content
   +layout(sm)
@@ -44,27 +46,23 @@
     height 4rem
     overflow hidden
     z-index 10
-    background-color #fff
     box-shadow 0 2px 5px 0 rgba(0, 0, 0, .12);
 
 .ex-side-content
   +layout(xs)
     width 100%
     height 4rem
-    padding 2rem
     overflow hidden
-    background-color #fff
     box-shadow 0 2px 5px 0 rgba(0, 0, 0, .12);
 
     &::before
       content 'Geist Style'
       position absolute
-      width 100%
       height 4rem
       top 0
       left 0
       right 0
-      background-color #fff
+      background-color var(--geist-background)
       text-align center
       line-height 4rem
       font-size 1.2rem
@@ -77,3 +75,8 @@
 .ex-content
   +layout(xs)
     padding-top 5rem
+
+.zi-main
+  +layout(xs)
+    padding-left 1rem
+    padding-right 1rem
