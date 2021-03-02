@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/minzipped-4kb-green.svg?style=popout&colorB=01b301">
 </p>
 
-Geist style is a modern Css library.
+Geist style is a modern CSS library.
 
 There's only styles here. If you're looking for a front-end library, please reference [geist-react](https://github.com/geist-org/react).
 
